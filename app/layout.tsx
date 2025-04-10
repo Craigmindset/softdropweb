@@ -1,0 +1,21 @@
+import type React from "react"
+import type { Metadata } from "next"
+import ClientLayout from "./clientLayout"
+
+export const metadata: Metadata = {
+  title: "Logistics App",
+  description: "A modern logistics application",
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return <ClientLayout>{children}</ClientLayout>
+}
+
+
+
+import './globals.css'
